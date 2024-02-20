@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média</title>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <h2>Calculadora de Média</h2>
+
+    <!-- Formulário para inserir os dados -->
+    <form id="formCalculadora">
+        <!-- Campo para a disciplina -->
+        <label for="disciplina">Disciplina:</label>
+        <input type="text" id="disciplina" required><br>
+
+        <!-- Campo para o nome do aluno -->
+        <label for="aluno">Aluno:</label>
+        <input type="text" id="aluno" required><br>
+
+        <!-- Campos para as quatro notas -->
+        <label for="nota1">Nota 1:</label>
+        <input type="number" id="nota1" required><br>
+
+        <label for="nota2">Nota 2:</label>
+        <input type="number" id="nota2" required><br>
+
+        <label for="nota3">Nota 3:</label>
+        <input type="number" id="nota3" required><br>
+
+        <label for="nota4">Nota 4:</label>
+        <input type="number" id="nota4" required><br>
+
+        <!-- Botão para calcular a média quando clicado -->
+        <button type="button" onclick="calcularMedia()">Calcular Média</button>
+    </form>
+
+    <!-- Para exibir o resultado da média -->
+    <p id="resultado"></p>
+
+</body>
+</html>
